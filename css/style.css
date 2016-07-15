@@ -1,0 +1,76 @@
+body{
+  font-size: 16px !important;
+}
+header.head{
+  background-color: #E91E63;
+  color: white;
+  padding: 2%;
+}
+
+/* Description and image */
+.pokemon-image img{
+  width: 100px;
+  display: block;
+  margin: auto;
+  margin: 20px auto;
+}
+.description h2{
+  font-size: 0.85em;
+}
+.description p{
+  font-size: 0.55em;
+}
+ul.type{
+  text-align: center;
+  padding: 0;
+  padding-bottom: 13px;
+}
+ul.type li{
+  font-size: 0.58em;
+  list-style-type: none;
+  display: inline;
+  background-color: pink;
+  border-radius: 3px;
+  width: 30%;
+  margin-right: 5%;
+  float: left;
+  padding: 0.5px;
+}
+ul.type li:last-child{
+  margin-right: 0;
+}
+
+/* General Info */
+
+.information h1, .evolution h1{
+  color: white;
+  font-size: 0.8em;
+  background-color: #949494;
+  padding: 5px 5%;
+  margin: auto;
+}
+.clearfix p{
+  font-size: 0.8em;
+  padding: 5px 0;
+  margin: auto;
+}
+.clearfix{
+  border-top: 1px solid #949494;
+}
+
+/* Evolution */
+
+.evolution h3{
+  font-size: 0.7em;
+  font-weight: bold;
+}
+.evolution .type li{
+  width: 20%;
+}
+
+
+
+
+/*.clearfix, .row, .col-xs-6, .col-xs-6  p{
+  border: 2px solid black;
+}*/
