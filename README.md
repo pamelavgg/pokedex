@@ -1,6 +1,6 @@
 # Pokedex
 
-This is the first part of the pokedex project for the Angular Bootcamp
+This is just the first part of the pokedex project for the Angular Bootcamp
 
 
 ##Screenshots
