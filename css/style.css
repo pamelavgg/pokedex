@@ -1,76 +1,129 @@
-body{
+body {
   font-size: 16px !important;
+  color: #949494 !important;
+  font-family: Helvetica, Arial, sans-serif;
 }
-header.head{
-  background-color: #E91E63;
-  color: white;
+body h1,
+body h2,
+body h3 {
+  margin-top: 15px;
+  margin-bottom: 12px;
+}
+body .clearfix {
+  border-bottom: 1px solid #949494;
+}
+body header {
+  max-height: 55px;
+}
+body header.head {
+  background-color: #e91e63;
+  color: #ffffff;
   padding: 2%;
 }
-
-/* Description and image */
-.pokemon-image img{
+body header.head span {
+  float: left;
+}
+.pokemon .pokemon-image img {
   width: 100px;
   display: block;
   margin: auto;
   margin: 20px auto;
 }
-.description h2{
-  font-size: 0.85em;
+.pokemon .description h2 {
+  font-size: 0.9em;
+  color: #e91e63;
 }
-.description p{
+.pokemon .description h2 small {
+  font-size: 10px;
+}
+.pokemon .description p {
   font-size: 0.55em;
 }
-ul.type{
-  text-align: center;
-  padding: 0;
-  padding-bottom: 13px;
+.pokemon .description span[class^="icon"] {
+  font-size: 14px;
+  color: #949494;
+  float: right;
+  margin: 1px 0 0 7px ;
 }
-ul.type li{
-  font-size: 0.58em;
-  list-style-type: none;
-  display: inline;
-  background-color: pink;
-  border-radius: 3px;
-  width: 30%;
-  margin-right: 5%;
-  float: left;
-  padding: 0.5px;
-}
-ul.type li:last-child{
-  margin-right: 0;
-}
-
-/* General Info */
-
-.information h1, .evolution h1{
+.information h1,
+.evolution h1 {
   color: white;
   font-size: 0.8em;
   background-color: #949494;
   padding: 5px 5%;
   margin: auto;
 }
-.clearfix p{
+.clearfix .prop {
+  color: #6e6e6e;
+}
+.clearfix p {
   font-size: 0.8em;
   padding: 5px 0;
   margin: auto;
 }
-.clearfix{
-  border-top: 1px solid #949494;
+.evolution .poke-num {
+  margin: 5px 0;
+  float: right;
+  font-size: 0.6em;
 }
-
-/* Evolution */
-
-.evolution h3{
+.evolution .clearfix {
+  padding: 2% 5%;
+}
+.evolution .name {
   font-size: 0.7em;
   font-weight: bold;
+  color: #151515;
 }
-.evolution .type li{
-  width: 20%;
+.evolution .name > small {
+  font-size: 0.85em;
+  margin-left: 5%;
 }
-
-
-
-
-/*.clearfix, .row, .col-xs-6, .col-xs-6  p{
-  border: 2px solid black;
-}*/
+.evolution figure {
+  margin-right: 10px;
+  width: 25%;
+  max-width: 150px;
+  height: 55px;
+  border: 1px solid #949494;
+  overflow: hidden;
+  float: left;
+  box-sizing: border-box;
+}
+.evolution figure img {
+  height: 55px;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+ul.type {
+  text-align: center;
+  padding: 0;
+}
+.pokemon ul.type {
+  padding-bottom: 13px;
+}
+.evolution ul.type > li {
+  width: 15%;
+}
+ul.type li {
+  font-size: 0.58em;
+  list-style-type: none;
+  display: inline;
+  border-radius: 3px;
+  width: 30%;
+  margin-right: 5%;
+  float: left;
+  padding: 0.5px;
+  color: white;
+}
+ul.type li:last-child {
+  margin-right: 0;
+}
+ul.type li.grass {
+  background-color: #97d077;
+}
+ul.type li.poison {
+  background-color: #966dab;
+}
+ul.type li.bug {
+  background-color: #67ab9f;
+}

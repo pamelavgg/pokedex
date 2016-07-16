@@ -4,84 +4,96 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/js/bootstrap.min.js">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
     <title>Description</title>
   </head>
 
   <body>
-
     <header class="head container-fluid text-center">
-      <h1>Description</h1>
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      Description
     </header>
 
+    <!-- Pokemon card -->
     <div class="container-fluid">
       <section class="row pokemon">
         <figure class="pokemon-image col-xs-5">
           <img src="img/bulbasaur.png" alt="bulbasaur pokemon" />
         </figure>
         <section class="col-xs-7 description">
-          <h2>#001 Bulbasaur <br><small>0.7m, 6.9kg</small></h2>
+          <h2>#001 Bulbasaur <span class="icon-star"></span>
+          <span class="icon-pokeball"></span><br><small> 0.7m, 6.9kg</small></h2>
           <p>Bulbasaur can be seen napping in bright sunlight. There is a seed on its back.
             By soaking up the sun's rays, the seed grows progressively larger.</p>
           <ul class="type">
-            <li>Grass</li>
-            <li>Poison</li>
-            <li>Bug</li>
+            <li class="grass">Grass</li>
+            <li class="poison">Poison</li>
+            <li class="bug">Bug</li>
           </ul>
         </section>
       </section>
 
+      <!-- General info -->
       <section class="row information">
         <h1>General Information</h1>
         <div class="clearfix">
-          <div class="col-xs-7"><p>Hidden Abilities</p></div>
+          <div class="col-xs-7"><p class="prop">Hidden Abilities</p></div>
           <div class="col-xs-5"><p>Clorophyll</p></div>
         </div>
         <div class="clearfix">
-          <div class="col-xs-7"><p>Location</p></div>
+          <div class="col-xs-7"><p class="prop">Location</p></div>
           <div class="col-xs-5"><p>Lumiose City</p></div>
         </div>
       </section>
 
-        <section class="row evolution">
-          <header><h1>Evolution</h1></header>
-          <div class="clearfix">
-            <div class="col-xs-3"><img src="img/img2.png" alt="" /></div>
-            <div class="col-xs-9">
-              <h3>Bulbasaur</h3>
-              <ul class="type">
-                <li>Grass</li>
-                <li>Poison</li>
-                <li>Bug</li>
-              </ul>
 
-            </div>
-          </div>
-          <div class="clearfix">
-            <div class="col-xs-3"><img src="img/img2.png" alt="" /></div>
-            <div class="col-xs-9">
-              <h3>Ivysaur</h3>
-              <ul class="type">
-                <li>Grass</li>
-                <li>Poison</li>
-                <li>Bug</li>
-              </ul>
+      <!-- Evolutions -->
+      <section class="row evolution">
+        <header><h1>Evolution</h1></header>
 
-            </div>
+        <div class="clearfix">
+            <figure>
+              <img src="img/bulbasaur.png" alt="" />
+            </figure>
+            <h4 class="poke-num">#001</h4>
+            <h3 class="name">Bulbasaur</h3>
+            <ul class="type">
+              <li class="grass">Grass</li>
+              <li class="poison">Poison</li>
+              <li class="bug">Bug</li>
+            </ul>
           </div>
-          <div class="clearfix">
-            <div class="col-xs-3"><img src="img/img2.png" alt="" /></div>
-            <div class="col-xs-9">
-              <h3>Venusaur</h3>
-              <ul class="type">
-                <li>Grass</li>
-                <li>Poison</li>
-                <li>Bug</li>
-              </ul>
 
-            </div>
+        <div class="clearfix">
+          <figure>
+            <img src="img/ivysaur.png" alt="" />
+          </figure>
+          <h4 class="poke-num">#002</h4>
+          <h3 class="name">Ivysaur <small>LV.  16</small> </h3>
+          <ul class="type">
+            <li class="grass">Grass</li>
+            <li class="poison">Poison</li>
+            <li class="bug">Bug</li>
+          </ul>
+        </div>
+
+        <div class="clearfix">
+          <figure>
+            <img src="img/venusaur.png" alt="" />
+          </figure>
+          <h4 class="poke-num">#003</h4>
+          <h3 class="name">Venusaur <small>LV. 32</small></h3>
+          <ul class="type">
+            <li class="grass">Grass</li>
+            <li class="poison">Poison</li>
+            <li class="bug">Bug</li>
+          </ul>
           </div>
+        </div>
         </section>
       </div>
   </body>

@@ -1,0 +1,37 @@
+@import "general.less";
+
+.evolution{
+  .poke-num{
+    margin: @top-bottom 0;
+    float: right;
+    font-size: 0.6em;
+  }
+  .clearfix{
+    padding: 2% 5%;
+  }
+  .name{
+    font-size: 0.7em;
+    font-weight: bold;
+    color: darken(@primary-color-2, 50%);
+    & > small{
+      font-size: 0.85em;
+      margin-left: 5%;
+    }
+  }
+  figure{
+    margin-right: @base - 6;
+    width: 25%;
+    max-width: 150px;
+    height: @img-height;
+    border: 1px solid @primary-color-2;
+    overflow: hidden;
+    float: left;
+    box-sizing: border-box;
+    img{
+      height: @img-height;
+      width: auto;
+      display: block;
+      margin: auto;
+    }
+  }
+}

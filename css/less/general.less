@@ -1,0 +1,25 @@
+@import "util.less";
+
+body{
+  font-size: @base !important;
+  color: @primary-color-2 !important;
+  font-family: Helvetica, Arial, sans-serif;
+  h1, h2, h3 {
+    margin-top: @base - 1;
+    margin-bottom: @base - 4;
+  }
+  .clearfix{
+    border-bottom: 1px solid @primary-color-2;
+  }
+  header{
+    max-height: 55px;
+    &.head{
+      background-color: @primary-color-1;
+      color: @font-color-altern;
+      padding: 2%;
+      span{
+        float: left;
+      }
+    }
+  }
+}

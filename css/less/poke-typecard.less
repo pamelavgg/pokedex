@@ -1,0 +1,35 @@
+@import "general.less";
+
+ul.type{
+  .pokemon &{
+    padding-bottom: @base - 3;
+  }
+  .evolution & > li{
+    width: 15%;
+  }
+  text-align: center;
+  padding: 0;
+  li{
+    font-size: 0.58em;
+    list-style-type: none;
+    display: inline;
+    border-radius: 3px;
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+    padding: 0.5px;
+    color: white;
+    &:last-child{
+      margin-right: 0;
+    }
+    &.grass{
+      background-color: @color-grass;
+    }
+    &.poison{
+      background-color: @color-poison;
+    }
+    &.bug{
+      background-color: @color-bug;
+    }
+  }
+}
