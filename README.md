@@ -1,7 +1,7 @@
-# pokedex
+# Pokedex
 
-First part of pokedex project
+First part of the pokedex project
 
 
-#Screenshot
-![Screen](sc/screen-1.png)
+##Screenshot
+![First-Screen](sc/screen-1.png)
